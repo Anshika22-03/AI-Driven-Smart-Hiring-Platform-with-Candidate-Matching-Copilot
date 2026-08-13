@@ -1,0 +1,503 @@
+/* ==========================================================
+   GOOGLE FONT
+========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"],
+.stApp {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================================================
+   LIGHT THEME
+========================================================== */
+
+.stApp{
+    background:#F6F8FC;
+    color:#111827 !important;
+}
+
+/* Main page */
+.main .block-container{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    max-width:95%;
+}
+
+/* ==========================================================
+   FORCE TEXT COLOR (FIX)
+========================================================== */
+
+:root{
+    --text-color:#111827;
+}
+
+/* Every Streamlit element */
+
+.stApp,
+.stApp *{
+    color:#111827 !important;
+}
+
+/* Markdown */
+
+.stMarkdown,
+.stMarkdown p,
+.stMarkdown li,
+.stMarkdown span,
+.stMarkdown div{
+    color:#111827 !important;
+}
+
+/* Headings */
+
+h1,h2,h3,h4,h5,h6{
+    color:#111827 !important;
+}
+
+/* Labels */
+
+label{
+    color:#111827 !important;
+}
+
+/* Metrics */
+
+div[data-testid="metric-container"] *{
+    color:#111827 !important;
+}
+
+/* Caption */
+
+.stCaption{
+    color:#6B7280 !important;
+}
+
+/* Exceptions */
+
+.hero,
+.hero *,
+.stButton button,
+.stDownloadButton button,
+[data-testid="stSidebar"],
+[data-testid="stSidebar"] *{
+    color:white !important;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    background:linear-gradient(90deg,#2563EB,#4F46E5);
+
+    padding:30px;
+
+    border-radius:18px;
+
+    color:white !important;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    margin-bottom:25px;
+}
+
+.hero h1{
+
+    color:white !important;
+
+    margin-bottom:8px;
+
+    font-size:42px;
+}
+
+.hero p{
+
+    color:white !important;
+
+    font-size:18px;
+}
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+[data-testid="stSidebar"]{
+
+    background:#0F172A;
+}
+
+[data-testid="stSidebar"] *{
+
+    color:white !important;
+}
+
+[data-testid="stSidebar"] hr{
+
+    border-color:#334155;
+}
+
+/* ==========================================================
+   METRIC CARDS
+========================================================== */
+
+div[data-testid="metric-container"]{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    border-left:5px solid #2563EB;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+div[data-testid="metric-container"]:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.stButton>button{
+
+    width:100%;
+
+    background:#2563EB;
+
+    color:white !important;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    height:46px;
+
+    transition:.25s;
+}
+
+.stButton>button:hover{
+
+    background:#1D4ED8;
+
+    transform:scale(1.02);
+}
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.stTextInput input,
+.stTextArea textarea{
+
+    background:white;
+
+    color:#111827 !important;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+}
+
+.stSelectbox div[data-baseweb="select"]{
+
+    background:white;
+
+    border-radius:10px;
+
+    color:#111827 !important;
+}
+
+/* ==========================================================
+   FILE UPLOADER
+========================================================== */
+
+[data-testid="stFileUploader"]{
+
+    background:white;
+
+    border:2px dashed #2563EB;
+
+    border-radius:14px;
+
+    padding:15px;
+}
+
+/* ==========================================================
+   EXPANDERS
+========================================================== */
+
+details{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:10px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+/* ==========================================================
+   INFO BOXES
+========================================================== */
+
+.stAlert{
+
+    border-radius:12px;
+}
+
+/* ==========================================================
+   CHAT
+========================================================== */
+
+[data-testid="stChatMessage"]{
+
+    border-radius:12px;
+
+    background:white;
+
+    color:#111827 !important;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+table{
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+}
+
+/* ==========================================================
+   CANDIDATE CARD
+========================================================== */
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+}
+
+/* ==========================================================
+   STATUS BADGES
+========================================================== */
+
+.pending{
+
+    background:#FEF3C7;
+
+    color:#92400E !important;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:600;
+}
+
+.shortlisted{
+
+    background:#DCFCE7;
+
+    color:#166534 !important;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:600;
+}
+
+.rejected{
+
+    background:#FEE2E2;
+
+    color:#991B1B !important;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:600;
+}
+
+/* ==========================================================
+   PLOTLY
+========================================================== */
+
+.js-plotly-plot{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:10px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+/* ==========================================================
+   TABS
+========================================================== */
+
+.stTabs [data-baseweb="tab"]{
+
+    font-weight:600;
+
+    color:#111827 !important;
+}
+
+/* ==========================================================
+   RADIO
+========================================================== */
+
+.stRadio label{
+
+    color:#111827 !important;
+}
+
+/* ==========================================================
+   CHECKBOX
+========================================================== */
+
+.stCheckbox label{
+
+    color:#111827 !important;
+}
+
+/* ==========================================================
+   DOWNLOAD BUTTON
+========================================================== */
+
+.stDownloadButton button{
+
+    background:#10B981;
+
+    color:white !important;
+
+    border:none;
+
+    border-radius:10px;
+}
+
+.stDownloadButton button:hover{
+
+    background:#059669;
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    text-align:center;
+
+    color:#6B7280 !important;
+
+    margin-top:30px;
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563EB;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#E5E7EB;
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(8px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.block-container{
+
+    animation:fadeIn .4s ease;
+}
+/* ==========================================================
+   STREAMLIT FIX
+========================================================== */
+
+[data-testid="stMarkdownContainer"]{
+    color:#111827 !important;
+}
+
+[data-testid="stMetricValue"]{
+    color:#111827 !important;
+}
+
+[data-testid="stMetricLabel"]{
+    color:#374151 !important;
+}
+
+[data-testid="stHeader"]{
+    color:#111827 !important;
+}
+
+[data-testid="stText"]{
+    color:#111827 !important;
+}
+
+[data-testid="stCaptionContainer"]{
+    color:#6B7280 !important;
+}
